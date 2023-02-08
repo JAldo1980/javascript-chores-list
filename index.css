@@ -1,0 +1,107 @@
+/*
+
+COLOR PALETTE
+
+WHITE: #FEFEFE
+BLACK: #000000
+TEXT INPUT BACKGROUND: #EEEEEE
+ADD BUTTON: #FFCC68
+DELETE BUTTON: #FF9548
+CHORE: #FBDF7C
+
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fefefe;
+  --black: #000;
+  --text-input-bckgrnd: #eee;
+  --add-btn: #ffcc68;
+  --delete-btn: #ff9548;
+  --chore: #fbdf7c;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.container {
+  padding: 2em 0;
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+header {
+  text-align: center;
+}
+
+.chores-input-container {
+  margin: 0.5em auto;
+  display: flex;
+  justify-content: center;
+
+  gap: 0.5em;
+}
+
+.chores-input-container input[type="text"] {
+  background-color: var(--text-input-bckgrnd);
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  padding: 1em;
+  font-size: 1rem;
+}
+
+.chores-input-container input[type="text"]::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: black;
+}
+
+.chores-output-container {
+  margin: 0.5em auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chore-style {
+  font-size: 1rem;
+  text-align: center;
+  width: 270px;
+  margin: 0.5em;
+  padding: 1em;
+  background-color: var(--chore);
+  border-radius: 6px;
+}
+
+h1 {
+  font-family: "Concert One", cursive;
+  font-size: 2rem;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+}
+
+.add-btn {
+  background-color: var(--add-btn);
+  border: none;
+  border-radius: 6px;
+  padding: 1em 1.2em;
+}
+
+.delete-btn {
+  background-color: var(--delete-btn);
+  border: none;
+  border-radius: 6px;
+  padding: 1em 1.2em;
+}
