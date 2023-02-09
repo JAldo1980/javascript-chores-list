@@ -71,6 +71,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.4s;
 }
 
 .chore-style {
@@ -80,7 +81,20 @@ header {
   margin: 0.5em;
   padding: 1em;
   background-color: var(--chore);
+  border: 2px solid white;
   border-radius: 6px;
+  transition: 0.5s;
+}
+
+.chore-style:hover {
+  background-color: lightcoral;
+  border: 2px solid white;
+
+  transition: 0.5s;
+}
+
+.chore-style:active {
+  border: 2px solid red;
 }
 
 h1 {
@@ -90,6 +104,7 @@ h1 {
 
 button {
   font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
 
 .add-btn {
