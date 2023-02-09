@@ -22,10 +22,7 @@ function renderChores() {
   let html = "";
   chores.forEach(function (chore) {
     html += `
-    
         <p class="chore-style">${chore}</p>
-        
-        
         `;
   });
   choresOutput.innerHTML = html;
@@ -39,3 +36,5 @@ deleteBtn.addEventListener("click", function () {
 });
 
 // remove individual chore item
+
+//
